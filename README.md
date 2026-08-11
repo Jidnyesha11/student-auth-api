@@ -552,7 +552,8 @@ Passwords are stored as bcrypt hashes.
 
 # 🚀 Deployment
 
-This API can be deployed using Render.
+Deployed using Render:
+[text](https://student-auth-api-2seo.onrender.com/)
 
 ### Required Environment Variables on Render
 
