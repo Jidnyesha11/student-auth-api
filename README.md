@@ -1,6 +1,3 @@
-Absolutely. Copy-paste this **entire block directly into `README.md`**.
-
-````markdown
 # 🔐 Student Authentication API
 
 A RESTful Student Authentication API built using Node.js, Express.js, MongoDB, Mongoose, bcryptjs, and JSON Web Token (JWT).
