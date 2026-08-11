@@ -19,16 +19,21 @@ app.use("/api/users", userRoutes);
 app.get("/", (req, res) => {
     res.status(200).json({
         success: true,
-        message: "User Authentication API is running"
+        message: "Student Authentication API is running"
     });
 });
 
 const startServer = async () => {
-    await connectDB();
+    try {
+        await connectDB();
 
-    app.listen(PORT, () => {
-        console.log(`🚀 Server running on http://localhost:${PORT}`);
-    });
+        app.listen(PORT, "0.0.0.0", () => {
+            console.log(`Server running on port ${PORT}`);
+        });
+    } catch (error) {
+        console.error("Failed to start server:", error.message);
+        process.exit(1);
+    }
 };
 
 startServer();
